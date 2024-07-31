@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+h1{
+    margin-top:6vh;
+}
+.container{
+    height:70vh; /*70% of viewport height will be give given to container*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;   /*(vmin is the min dimension of viewport*/
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;   /* this will make sure that the original length of boxes fit in the game or not , if not just utilise the whole game*/
+    align-items: center;
+    justify-content: center;
+    gap:1.5vmin;  /*  generates gap between boxes*/
+}
+
+/* this 60vmin will contain 3 lines to form a 3*3 matrix right so 1 line should get 20vmin, but i will be going to give it 18*/
+
+.box{
+    height: 18vmin;
+    width : 18vmin;
+    border-radius: 1rem;  /* it simply makes the edges of the boxes round , rounded edges*/
+    border:none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* horizontal, vertical , blur radius(more value more blurred shadow) , color*/
+    font-size : 8vmin;
+    color: rgba(150, 5, 5, 0.83);
+    /* give it a color*/
+    background-color: rgb(247, 247, 153);
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.05rem;
+    background-color: rgba(0, 0, 0, 0.797);
+    color:white;
+    border-radius : 1rem;
+    border:none;
+}
+
+#newGame-btn{
+    padding: 1rem;
+    font-size: 1.05rem;
+    background-color: rgba(0, 0, 0, 0.797);
+    color:white;
+    border-radius : 1rem;
+    border:none;
+}
+
+#msg{
+    color:rgb(247, 247, 153);
+    font-size : 3.5vmin;
+    margin-bottom: 2vmin;
+    margin-top: 1vmin;
+}
+
+.mssg-container{
+    height:10vmin;
+}
+
+.hide{
+    display: none;
+}
